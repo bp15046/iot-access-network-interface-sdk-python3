@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 
-class NetworkInterface(metaclass=ABCMeta):
+class AccessNetworkInterface(metaclass=ABCMeta):
     def __init__(self, addr, port):
         self._addr = addr
         self._port = port

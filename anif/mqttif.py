@@ -1,10 +1,10 @@
-from anif.anif import NetworkInterface
+from anif.anif import AccessNetworkInterface
 from paho.mqtt import client as paho_mqtt
 import threading
 import time
 
 
-class MQTTInterface(NetworkInterface):
+class MQTTInterface(AccessNetworkInterface):
     def __init__(self, addr, port):
         super().__init__(addr, port)
         self._client = paho_mqtt.Client(protocol=paho_mqtt.MQTTv31)
